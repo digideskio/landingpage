@@ -4,6 +4,18 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* TO DO ---
+
+ 1. Organize image
+ - Common properties for slide height - one for each size
+ - Tailor each background image to given height
+ - Background images should be fixed and shrinking window should merely crop
+ 
+ 2. Device mockups
+ - Pad each column
+ - Look into carsl options (edyn as example)
+ -
+*/
 body {
     width: 100%;
     height: 100%;
@@ -147,12 +159,14 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/introBG.jpg) no-repeat bottom center scroll;
+    background: url(../img/backgrounds/courtCompfullsizeNoisy.jpg) no-repeat bottom center scroll;
+    background-position: top;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
 
 #about{
@@ -162,7 +176,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/strong.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -178,7 +192,24 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/uvpBGDARKER.jpg) no-repeat bottom center scroll;
+    background: url(../img/backgrounds/officeCeiling.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#secondFeature{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -194,7 +225,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/stand.jpg) no-repeat bottom center scroll;
+    background: url(../img/backgrounds/officeFloor.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -357,20 +388,23 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
+
 
 .download-section {
+    display: table;
     width: 100%;
-    padding: 50px 0;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
     color: #fff;
-    background: url(../img/uvpBG.jpg) no-repeat center center scroll;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    -o-background-size: cover;
+
 }
 
 #map {
@@ -380,9 +414,7 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
+    
 
     .download-section {
         padding: 100px 0;
@@ -470,4 +502,107 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+/* temp bullshit */
+
+/*h2 {
+font-size: 14px;
+
+
+
+}*/
+
+/*img#macbook {
+    padding: 31px;
+}*/
+
+
+/*must change these with each media query later*/
+.row {
+    padding: 48x;
+}
+
+#macbook {
+    width: 800px;
+}
+
+
+
+@media(max-width:1199px) {
+   #macbook {
+    width: 600px;
+}
+}
+
+@media(max-width:767px) {
+    #macbook {
+    width: 400px;
+}
+
+}
+
+
+
+
+
+
+
+#secondFeature h2 {
+    text-align: center;
+    font-size: 21px;
+}
+
+#secondFeature p {
+    text-align: center;
+    font-size: 17px;
+}
+
+@media(min-width:768px) {
+   #secondFeature h2 {
+    text-align: left;
+}
+
+#secondFeature p {
+    text-align: left;
+}
+
+
+}
+
+#macbooksmall {
+padding-bottom: 36px;
+
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}
+
+
+#signupButton {
+    margin: 3px;
+}
+
+.form-control {
+
 }
