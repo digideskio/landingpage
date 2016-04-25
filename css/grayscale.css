@@ -397,7 +397,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/backgrounds/officeFloorB.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -525,6 +525,7 @@ font-size: 14px;
 
 #macbook {
     width: 800px;
+    z-index: 10;
 }
 
 
@@ -543,6 +544,34 @@ font-size: 14px;
 }
 
 
+/* gif stuff */
+
+#macbookGif {
+
+    /*position: absolute;
+    top: 26px;
+    right: 366px;
+    width: 610px;
+    border: 0px solid #73AD21;*/
+    z-index: -1;
+    margin-bottom: -500px;
+    width: 610px;
+}
+
+@media(max-width:1199px) {
+   #macbookGif {
+    width: 458px;
+    margin-bottom: -380px;
+}
+}
+
+@media(max-width:767px) {
+    #macbookGif {
+    width: 305px;
+    margin-bottom: -262px;
+}
+
+}
 
 
 
@@ -599,10 +628,22 @@ padding-bottom: 36px;
 }
 
 
+/* form stuff */
+
 #signupButton {
     margin: 3px;
 }
 
+
 .form-control {
+    font-family: courier;
 
 }
+
+input {
+
+}
+
+
+
+
