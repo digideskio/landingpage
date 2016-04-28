@@ -577,6 +577,8 @@ font-size: 14px;
 
 
 
+
+
 #secondFeature h2 {
     text-align: center;
     font-size: 21px;
@@ -641,6 +643,25 @@ padding-bottom: 36px;
 }
 
 input {
+
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+/* device feature paragraph */
+
+.specBlurb {
+    margin-top: 160px;
+}
+
+@media(max-width:767px) {
+    .specBlurb {
+    margin-top: 0px;
+}
 
 }
 
