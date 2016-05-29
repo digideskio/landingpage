@@ -179,7 +179,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/backgrounds/courtCompfullsizeNoisy.jpg) no-repeat bottom center scroll;
+    background: url(../img/backgrounds/courtCompLarge.jpg) no-repeat bottom center scroll;
     background-position: top;
     background-color: #000;
     -webkit-background-size: cover;
@@ -196,7 +196,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -212,7 +212,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/backgrounds/officeCeiling.jpg) no-repeat bottom center scroll;
+    background: url(../img/backgrounds/ceilingLarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -229,7 +229,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -245,7 +245,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/backgrounds/officeFloor.jpg) no-repeat bottom center scroll;
+    /*background: url(../img/backgrounds/floorLarge.jpg) no-repeat bottom center scroll;*/
+    background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/backgrounds/floorLargenah.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -419,7 +420,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/backgrounds/officeFloorB.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../img/backgrounds/floorLarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
