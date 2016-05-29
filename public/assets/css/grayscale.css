@@ -794,7 +794,12 @@ input {
 
   @font-face {
      font-family: 'source code pro';
-     src: url('../fonts/SourceCodePro-ExtraLight.ttf');
+     src: url('../fonts/SourceCodePro-ExtraLight.otf');
+ }
+
+   @font-face {
+     font-family: 'source code pro medium';
+     src: url('../fonts/SourceCodePro-Medium.otf');
  }
  
  
@@ -825,7 +830,9 @@ span.glyphicon.glyphicon-chevron-left:hover{
 }
 
 .ctaHeader {
-    display: inline;;
+    display: inline-block;
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 
 .typed-cursor {
