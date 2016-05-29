@@ -42,17 +42,36 @@ h6 {
     letter-spacing: 1px;
 }
 
+h1 {
+    font-family: friday13;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-family: source code pro;
+    opacity: 0.87;
+    font-size: 24px; 
+}
+
+h3 {
+    font-family: source code pro;
+    opacity: 0.87;
+    font-size: 36px; 
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 36px;
+    font-family: courier new;
 }
 
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
+        font-size: 18px;
+        line-height: 36px;
+        font-family: courier new;
     }
 }
 
@@ -77,7 +96,8 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: source code pro;
+    letter-spacing: 4.5px;
     background-color: #000;
 }
 
@@ -155,7 +175,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -303,6 +323,7 @@ a:focus {
     .intro {
         height: 100%;
         padding: 0;
+        /*use different image for smaller one max width 768 stuff*/
     }
 
     .intro .intro-body .brand-heading {
@@ -311,6 +332,7 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 26px;
+        line-height: 36px;
     }
 }
 
@@ -429,25 +451,26 @@ a:focus {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: source code pro;
+    letter-spacing: 2.5px;
+    font-weight: 100;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
-    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #000;
+    background-color: #FFFFFF;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #FFFFFF;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: #FFFFFF;
+    background-color: transparent;
 }
 
 ul.banner-social-buttons {
@@ -581,12 +604,12 @@ font-size: 14px;
 
 #secondFeature h2 {
     text-align: center;
-    font-size: 21px;
+   /* font-size: 21px;*/
 }
 
 #secondFeature p {
     text-align: center;
-    font-size: 17px;
+    /*font-size: 17px;*/
 }
 
 @media(min-width:768px) {
@@ -634,7 +657,61 @@ padding-bottom: 36px;
 
 #signupButton {
     margin: 3px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-bottom: 22px;
+    font-family: friday13;
 }
+
+#signupButton:hover,
+#signupButton:focus {
+    border: 1px solid #FFFFFF
+    outline: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+
+            /*animation*/
+            -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+              -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+              animation: neon2 1.5s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
+             from {
+                border-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                border-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+            @-moz-keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
+
+            @keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
 
 
 .form-control {
@@ -650,6 +727,8 @@ input {
     margin-right: 0px;
     margin-left: 0px;
 }
+
+
 
 
 /* device feature paragraph */
@@ -671,4 +750,77 @@ input {
 
 }
 
+
+.btn-default {
+    border: 1px solid #FFFFFF;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#introButton {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#introButton:hover,
+#introButton:focus {
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    color: #00FFFF;
+    background-color: transparent;
+}
+
+/* typography */
+
+/* Font Faces */
+@font-face {
+     font-family: 'courier new';
+     src: url('../public/assets/fonts/Courier New.ttf');
+ }
+
+ @font-face {
+     font-family: 'friday13';
+     src: url('../public/assets/fonts/Friday13v12.ttf');
+ }
+
+  @font-face {
+     font-family: 'source code pro';
+     src: url('../public/assets/fonts/SourceCodePro-ExtraLight.ttf');
+ }
+ 
+ 
+span.glyphicon.glyphicon-chevron-right{
+
+    opacity: 0.3;
+}
+
+span.glyphicon.glyphicon-chevron-right:hover{
+    opacity: 0.8;
+    color: #00FFFF;
+}
+
+span.glyphicon.glyphicon-chevron-left {
+    opacity: 0.3;
+}
+span.glyphicon.glyphicon-chevron-left:hover{
+    opacity: 0.8;
+    color: #00FFFF;
+}
+
+.carousel-indicators li {
+    opacity: 0.3;
+}
+
+#ctaRow {
+    margin-bottom: 20px;
+}
 
