@@ -5,7 +5,6 @@ var router = express.Router();
 
 // requesting root directory
 router.get('/', function(request, response) {
-	console.log("ERROR");
 	response.render('index.html');
 });
 

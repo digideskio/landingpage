@@ -784,17 +784,17 @@ input {
 /* Font Faces */
 @font-face {
      font-family: 'courier new';
-     src: url('../public/assets/fonts/Courier New.ttf');
+     src: url('../fonts/Courier New.ttf');
  }
 
  @font-face {
      font-family: 'friday13';
-     src: url('../public/assets/fonts/Friday13v12.ttf');
+     src: url('../fonts/Friday13v12.ttf');
  }
 
   @font-face {
      font-family: 'source code pro';
-     src: url('../public/assets/fonts/SourceCodePro-ExtraLight.ttf');
+     src: url('../fonts/SourceCodePro-ExtraLight.ttf');
  }
  
  
@@ -824,3 +824,29 @@ span.glyphicon.glyphicon-chevron-left:hover{
     margin-bottom: 20px;
 }
 
+.ctaHeader {
+    display: inline;;
+}
+
+.typed-cursor {
+    font-size: 24px; 
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
