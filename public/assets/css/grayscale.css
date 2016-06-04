@@ -94,11 +94,11 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
     font-family: source code pro;
     letter-spacing: 4.5px;
-    background-color: #000;
+    background-color: rgba(0,0,0,.4);
 }
 
 .navbar-custom .navbar-brand {
@@ -312,9 +312,6 @@ a:focus {
 
 
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
 
 .intro .intro-body .intro-text {
     font-size: 18px;
@@ -542,29 +539,111 @@ font-size: 14px;
 }*/
 
 
-/*must change these with each media query later*/
+/* must change these with each media query later*/
+/* images are just placehodlers */
 .row {
     padding: 48x;
 }
 
 #macbook {
-    width: 800px;
+    width: 1000px;
+    height: 600px;
     z-index: 10;
+   /* background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
+    background-size: 1000px;*/
 }
 
+.mobileImage {
+    width: 400px;
+}
+
+.specBlurb {
+    margin-top: 200px;
+}
 
 
 @media(max-width:1199px) {
    #macbook {
-    width: 600px;
+        width: 700px;
+        height: 400px;
+ /*       background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
+        background-size: 700px;*/
 }
+    .specBlurb {
+        margin-top: 15%;
+        max-height: 200px;
+    }
+    .mobileImage {
+        width: 300px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
+/* Switch from laptop to mobile */
 @media(max-width:767px) {
     #macbook {
-    width: 400px;
+    width: 500px;
+    height: 850px;
+/*    background: url(../img/devices/stills/storyMobileBlack.png) no-repeat bottom center scroll;
+    background-size: 300px;*/
+}
+    .specBlurb {
+        margin-top: 0px;
+        max-height: none;
+    }
+     .mobileImage {
+        width: 50vw;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+
+    .intro {
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        background: url(../img/backgrounds/courtCompLarge.jpg) no-repeat bottom center scroll;
+        background-position: bottom;
+        background-color: #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    h1 {
+
+        font-size: 90px;
+    }
 }
 
+
+/* Bootstrap xs small size?? */
+@media(max-width:400px) {
+    #macbook {
+    width: 200px;
+    height: 650px;
+/*    background: url(../img/devices/stills/storyMobileBlack.png) no-repeat bottom center scroll;
+    background-size: 100px;*/
+}
+     .mobileImage {
+        width: 70vw;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    h1 {
+
+        font-size: 22vw;
+    }
+    
 }
 
 
@@ -596,6 +675,17 @@ font-size: 14px;
 }
 
 }
+
+
+/* device feature paragraph */
+
+
+
+
+.mobileImage {
+    
+}
+
 
 
 
@@ -732,20 +822,6 @@ input {
 
 
 
-/* device feature paragraph */
-
-.specBlurb {
-    margin-top: 160px;
-}
-
-@media(max-width:767px) {
-    .specBlurb {
-    margin-top: 0px;
-}
-
-}
-
-
 * {
         border: 1px solid rgba(255, 0, 0, 0.2);
 
@@ -857,4 +933,8 @@ span.glyphicon.glyphicon-chevron-left:hover{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+p.intro-text {
+    background-color: rgba(0,0,0,0.4)
 }
