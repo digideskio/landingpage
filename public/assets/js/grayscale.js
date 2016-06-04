@@ -18,11 +18,11 @@ $(document).ready(collapseNavbar);
 
 // Swiping bootstrap carousel NOT SURE IF IT WORKS YET
 $("#myCarousel").swiperight(function() {  
-      $("#myCarousel").carousel('prev');  
-    });  
-   $("#myCarousel").swipeleft(function() {  
-      $("#myCarousel").carousel('next');  
-   });  
+  $("#myCarousel").carousel('prev');  
+});  
+$("#myCarousel").swipeleft(function() {  
+  $("#myCarousel").carousel('next');  
+});  
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {

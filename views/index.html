@@ -79,9 +79,9 @@
                     <div class="col-sm-8 col-sm-offset-2">
                        
                        <h1 class="brand-heading">FedUp</h1>
-                        <p class="intro-text" style="background-color: black;">The public forum for social justice.</p>
+                        <p class="intro-text" style="background-color: black;">The social network for social justice.</p>
                         <form action="#about">
-                            <button type="submit" class="btn btn-default" id="introButton">Learn More</button>
+                            <button type="submit" class="btn btn-default" id="introButton">Explore</button>
                         </form>
                     </div>
                 </div>
@@ -90,13 +90,12 @@
     </header>
 
     <!-- Problem statement Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container content-section">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h2>The problem with our justice system</h2>
-                <p>Adopting the internet as the public forum of tomorrow, humanity has learned some things: Trial by Twitter never works, Facebook rants don't incite real change, and when utilized correctly, the internet can change the world.</p>
-                <p>Thats why we’re building FedUp: the world's first social network for social justice. </p>
-                <p>Through social sharing of injustice in our communities, we aim to to give a voice to the voiceless, and empower every person overlooked by the current system.</p>
+                <h2>The problem with internet & justice</h2>
+                <p class="mission">Facebook rants don't incite real change. Trial by Twitter doesn't work. When utilized correctly, however, the internet can change the world. There has to be a better way to incite justice on the web.</p>
+                <p style="font-weight: bold">>> Thats why we’re building FedUp: the world's first social network optimized for social justice.</p>
             </div>
           
         </div>
@@ -107,10 +106,13 @@
     <section id="built" class="container content-section text-center">
 
         <div class="row">
-            <div class="col-sm-12 col-sm-offset-0">
+            <div class="col-sm-8 col-sm-offset-2">
                 <h2>Introducing a new system for justice</h2>
+                <p>Through social sharing of injustice in our communities, we aim to empower users through civic engagement on the web.</p>
+            </div>
+            <div class="col-sm-12 col-sm-offset-0">
                 <img class="device" id="macbook" alt="surfacepro" align="middle" src="assets/img/devices/stills/homeDesktopWF.png">
- 
+            </div>
         </div>
     </section>
 
@@ -121,10 +123,8 @@
             
              <!-- Showing the features with an image of a posted case most likely of someone that has no where to share a story -->
                 <div class="col-sm-4 col-sm-push-5 col-sm-offset-1 col-xs-offset-1 col-xs-10 specBlurb">
-                    <h2>Tell your story to people who care</h2>
-                    <p>We are building the only social network on the web optimized for social justice.</p>
-                    <p>Share social injustice in your community through video, text, or external link submissions
-                    Embed content from other social networks. </p>
+                    <h2>Tell your story</h2>
+                    <p>Share social injustice in your community through video, text, or link submissions on the only platform built for civic engagement.</p>
                 </div>
             <div class="col-sm-4 col-sm-pull-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
                 <img class="mobileImage"  id="macbookSmall" src="/assets/img/devices/stills/storyMobileBlack.png" alt="surfacepro">
@@ -154,23 +154,19 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2 class="ctaHeader"></h2>
                 </div>
-                <div class="col-sm-6 col-sm-offset-3">
-                    <p>We need passionate citizens willing to try our technology.</p>
-                    <p>If you are eager to join our cause, or if you have a case you would like to submit, please contact us and we’ll be in touch soon.</p>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>We need passionate citizens willing to join our community.</p>
+                    <p>If you are interested in sharing injustice in your community or learning more about FedUp, leave us a note and we'll be in contact shortly.</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form class="form-inline">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <form class="form">
                       <div class="form-group">
-                        <label for="exampleInputName2"></label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputName2"></label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail2"></label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address">
+                        <label for="firstName"></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Name">
+                        <label for="email"></label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        <label for="note"></label>
+                        <textarea class="form-control" placeholder="Note" rows="3"></textarea>
                       </div>
                       <button type="submit" class="btn btn-default" id="signupButton" >Join us</button>
                     </form>
