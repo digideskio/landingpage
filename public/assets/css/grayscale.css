@@ -301,17 +301,10 @@ a:focus {
     }
 }
 
-
-
-
-
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
-
-
-
 
 .intro .intro-body .intro-text {
     font-size: 18px;
@@ -898,13 +891,17 @@ span.glyphicon.glyphicon-chevron-left:hover{
 }
 
 .ctaHeader {
-    display: inline-block;
+    display: inline;
     font-size: 42px;
-    margin-bottom: 30px;
+}
+
+#ctaHeader {
+    margin-bottom: 25px;
 }
 
 .typed-cursor {
     font-size: 42px; 
+    font-family: source code pro;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
