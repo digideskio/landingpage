@@ -147,7 +147,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.15);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -196,7 +196,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
+    background: url(../img/strongXLargeGradient.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -229,7 +229,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to left, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .8) 100%), url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -540,7 +540,7 @@ font-size: 14px;
 
 #macbook {
     width: 1000px;
-    height: 600px;
+
     z-index: 10;
    /* background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
     background-size: 1000px;*/
@@ -558,7 +558,7 @@ font-size: 14px;
 @media(max-width:1199px) {
    #macbook {
         width: 700px;
-        height: 400px;
+
  /*       background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
         background-size: 700px;*/
 }
@@ -570,6 +570,10 @@ font-size: 14px;
         width: 300px;
     }
 
+    #outcomeImage {
+        width: 600px;
+    }
+
     p {
         font-size: 16px;
         line-height: 24px;
@@ -579,8 +583,8 @@ font-size: 14px;
 /* Switch from laptop to mobile */
 @media(max-width:767px) {
     #macbook {
-    width: 500px;
-    height: 850px;
+    width: 90vw;
+
 /*    background: url(../img/devices/stills/storyMobileBlack.png) no-repeat bottom center scroll;
     background-size: 300px;*/
 }
@@ -592,6 +596,9 @@ font-size: 14px;
         width: 50vw;
         margin-top: 40px;
         margin-bottom: 80px;
+    }
+     #outcomeImage {
+        width: 70vw;
     }
 
 
@@ -621,8 +628,8 @@ font-size: 14px;
 /* Bootstrap xs small size?? */
 @media(max-width:400px) {
     #macbook {
-    width: 200px;
-    height: 650px;
+    width: 90vw;
+
 /*    background: url(../img/devices/stills/storyMobileBlack.png) no-repeat bottom center scroll;
     background-size: 100px;*/
 }
