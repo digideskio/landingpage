@@ -62,8 +62,9 @@ h3 {
 p {
     margin: 0 0 25px;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 28px;
     font-family: courier new;
+    color: rgba(255,255,255,.87);
 }
 
 @media(min-width:768px) {
@@ -167,7 +168,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 0px solid rgba(255,255,255,.3);
         background: #000;
     }
 }
@@ -205,11 +206,32 @@ a:focus {
     -o-background-size: cover;
 }
 
+#inspire{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/devices/stills/stock/12.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) -20%, rgba(0, 0, 0, .0) 50%),linear-gradient(to top, rgba(0, 0, 0, 1) -20%, rgba(0, 0, 0, .0) 50%), url(../img/devices/stills/stock/12.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) -40%, rgba(0, 0, 0, .0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 1) -40%, rgba(0, 0, 0, .0) 80%),linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .0) 50%), url(../img/devices/stills/stock/12.jpg) no-repeat bottom center scroll;
+    background-size: 120%;
+    background-color: #000;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+
 #built{
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
+    /*padding-top: 160px;*/
     text-align: center;
     color: #fff;
     background: url(../img/backgrounds/ceilingLarge.jpg) no-repeat bottom center scroll;
@@ -229,13 +251,16 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to left, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .8) 100%), url(../img/strongXLarge.jpg) no-repeat bottom center scroll;
+    /*background: linear-gradient(to left, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 1.0) 100%), url(../img/strongXLarge.jpg) no-repeat bottom center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     -o-background-size: cover;
+    background: url(../img/devices/stills/stock/9.jpg) no-repeat bottom center scroll;
+     background: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, .1) 80%),linear-gradient(to top, rgba(0, 0, 0, 1) -20%, rgba(0, 0, 0, .0) 50%), url(../img/devices/stills/stock/9.jpg) no-repeat bottom center scroll;*/
+    background-size: 120%;
 }
 
 #story{
@@ -325,6 +350,9 @@ a:focus {
         font-size: 26px;
         line-height: 36px;
     }
+
+
+
 }
 
 .btn-circle {
@@ -410,7 +438,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/backgrounds/floorLarge.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%), url(../img/backgrounds/floorlarge.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -531,6 +559,23 @@ font-size: 14px;
     padding: 31px;
 }*/
 
+#commentFeature {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+    background: url(../img/backgrounds/podium3.jpg) no-repeat top center scroll;
+    background-size: 150%;
+}
+
 
 /* must change these with each media query later*/
 /* images are just placehodlers */
@@ -540,8 +585,9 @@ font-size: 14px;
 
 #macbook {
     width: 1000px;
-
-    z-index: 10;
+ /*   margin-top: -181px;*/
+    margin-top: -48px;
+    z-index: -1;
    /* background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
     background-size: 1000px;*/
 }
@@ -550,9 +596,25 @@ font-size: 14px;
     width: 400px;
 }
 
-.specBlurb {
-    margin-top: 200px;
+/* this band aid stuff might not work..might have to migrate to absolute positioning*/
+.emojiImage {
+    width: 440px;
+    margin-top: 80px
 }
+
+
+.communityText {
+    margin-top: 120px
+}
+
+.overlay {
+    /*position: relative;*/
+  position: absolute;
+  left: 50%;
+  top: 37%;
+  transform: translate(-50%, -63%);
+  width: 80%;
+  }
 
 
 @media(max-width:1199px) {
@@ -562,12 +624,15 @@ font-size: 14px;
  /*       background: url(../img/devices/stills/homeDesktopWF.png) no-repeat bottom center scroll;
         background-size: 700px;*/
 }
-    .specBlurb {
-        margin-top: 15%;
-        max-height: 200px;
+    .communityText {
+        margin-top: 120px
     }
     .mobileImage {
-        width: 300px;
+        width: 360px;
+    }
+    .emojiImage {
+        width: 340px;
+        margin-top: 70px;
     }
 
     #outcomeImage {
@@ -578,6 +643,20 @@ font-size: 14px;
         font-size: 16px;
         line-height: 24px;
     }
+
+    /*p {
+        font-size: 14px;
+        line-height: 27px;
+    }*/
+}
+
+@media(max-width:992px) {
+
+    .emojiImage {
+        margin-top: 40px;
+    }
+
+
 }
 
 /* Switch from laptop to mobile */
@@ -588,14 +667,38 @@ font-size: 14px;
 /*    background: url(../img/devices/stills/storyMobileBlack.png) no-repeat bottom center scroll;
     background-size: 300px;*/
 }
+
+    #secondFeature {
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+    #commentFeature {
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+     .communityText {
+        margin-top: 0px
+    }
+
     .specBlurb {
         margin-top: 0px;
         max-height: none;
     }
      .mobileImage {
         width: 50vw;
-        margin-top: 40px;
-        margin-bottom: 80px;
+        
+        
+    }
+     .emojiImage {
+        width: 75vw;
+        margin-top: 0px;    }
+
+    #commentspics {
+        margin-left: 11vw;
     }
      #outcomeImage {
         width: 70vw;
@@ -622,6 +725,14 @@ font-size: 14px;
 
         font-size: 90px;
     }
+
+    .overlay {
+            /*position: relative;*/
+          position: absolute;
+          left: 50%;
+          top: 30%;
+          transform: translate(-50%, -70%);
+          }
 }
 
 
@@ -639,10 +750,25 @@ font-size: 14px;
         margin-bottom: 80px;
     }
 
+      .emojiImage {
+        width: 100vw;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
     h1 {
 
         font-size: 22vw;
     }
+
+        .overlay {
+            /*position: relative;*/
+          position: absolute;
+          left: 50%;
+          top: 20%;
+          transform: translate(-50%, -80%);
+          }
+}
     
 }
 
@@ -693,22 +819,22 @@ font-size: 14px;
 
 
 
-#secondFeature h2 {
+#secondFeature h2, #commentFeature h2 {
     text-align: center;
    /* font-size: 21px;*/
 }
 
-#secondFeature p {
+#secondFeature p, #commentFeature p {
     text-align: center;
     /*font-size: 17px;*/
 }
 
 @media(min-width:768px) {
-   #secondFeature h2 {
+   #secondFeature h2, #commentFeature h2 {
     text-align: left;
 }
 
-#secondFeature p {
+#secondFeature p, #commentFeature p {
     text-align: left;
 }
 
@@ -932,4 +1058,96 @@ span.glyphicon.glyphicon-chevron-left:hover{
 
 .mission {
     text-align: left;
+}
+
+
+
+
+* {
+    border: 0.5px rgba(255, 0, 0, 0.05) solid;
+}
+
+
+
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: rgba(244,244,244,0.15);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  font-family: courier new;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.95);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: rgba(35,136,255,.87);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  /*border: 1px solid #3ac162;*/
+ /* border-width: 1px 1px 3px;*/
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  font-family: source code pro;
+}
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
 }

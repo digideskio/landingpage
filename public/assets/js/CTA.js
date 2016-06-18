@@ -4,7 +4,8 @@ $(document).ready(function() {
 	  	handler: function() {
 			$(function(){
 		    	$(".ctaHeader").typed({
-		        	strings: ["We can't do this alone.", "Join us."],
+		        	// strings: ["We can't do this alone.", "Join us."],
+		        	strings: ["Join us."],
 		        	typeSpeed: 50
 		    	});
 			});
