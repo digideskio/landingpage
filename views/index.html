@@ -12,13 +12,6 @@
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 {% endblock %}
 
 {% block breadcrumb %}
@@ -36,7 +29,7 @@
 {% endblock %}
 
 {% block content %}
-        <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -77,11 +70,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                       
                        <h1 class="brand-heading">FedUp</h1>
-                        <p class="intro-text">The social network for social justice.</p>
+                        <p class="intro-text">A social network for social justice.</p>
                           <div class="col-sm-4 col-sm-offset-4">
-                            <button type="submit" class="btn btn-default" id="introButton">Examine</button>
+                            <a href="#about"><button class="btn btn-default" id="introButton">Explore</button></a>
                           </div>
                     </div>
                 </div>
@@ -93,18 +85,21 @@
     <section id="about" class="container content-section">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h2>The problem with internet & justice</h2>
-                <p class="mission">Facebook rants don't incite real change. Trial by Twitter doesn't work. When utilized correctly, however, the internet can change the world. There has to be a better way to inspire justice on the web.</p>
-                <p>>> Thats why we’re building FedUp: the world's first social network optimized for social justice.</p>
+                <h2>what we know: internet & justice</h2>
+                <p class="mission">
+                    1. We should address injustice faced by all humans. <br>
+                    2. Facebook rants & trial by Twitter don't make a positive difference. <br>
+                    3. When utilized correctly, the internet can change the world. <br> <br>
+
+                    That's why we built FedUp: the first social network designed to inspire social justice.
+                </p>
             </div>
-          
         </div>
     </section>
 
 
     <!-- Problem statement Section -->
     <section id="built" class="container content-section text-center">
-
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h2> <br> </h2>
@@ -114,9 +109,6 @@
                      <h2>Introducing a new system for justice.</h2>
                 </div>
                 <img class="device" id="macbook" alt="surfacepro" align="middle" src="assets/img/devices/stills/homeDesktopWFVVV.png">
-            </div>
-             <div class="col-sm-8 col-sm-offset-2">
-                <!-- <p> <br> Through social sharing of injustice in our communities, we aim to empower users through civic engagement on the web.</p> -->
             </div>
         </div>
     </section>
@@ -144,9 +136,8 @@
         <div class="row">
             <div class="col-sm-4 col-sm-offset-1 col-xs-offset-0 col-xs-12 communityText">
                 <h2>Engage your community</h2>
-                <p>We are building the only social network on the web optimized for social justice.</p>
-                <p>Share social injustice in your community through video, text, or external link submissions
-                Embed content from other social networks. </p>
+                <p>This isn't another social network. We are building a community of influencers interested in hearing your story.</p>
+                <p>By engaging civic leaders and activists from across the world, you expand your audience and can inspire real action. </p>
             </div>
              <div class="col-sm-4 col-sm-offset-1 col-xs-offset-0 col-xs-12">
                  <img class="mobileImage"  id="commentspics" src="/assets/img/devices/stills/temp/commentsMobile8.png" alt="surfacepro">   
@@ -176,101 +167,49 @@
     <section id="download" class="content-section text-center">
         <div id="join" class="download-section">
             <div class="container">
-                <!-- <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2" id="ctaHeader">
-                        <h1 class="ctaHeader" style="white-space:pre"></h1>
-                    </div>
-                </div> -->
                 <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
                     <h2>We can't do this alone</h2>
-                   <!--  <p>If you are interested in sharing injustice in your community or learning more about FedUp, leave us a note and we'll be in contact shortly.</p> -->
                 </div>
                 </div>
                 <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                        <!-- <form class="form">
-                          <div class="form-group">
-                            <label for="firstName"></label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Name">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email" placeholder="Email Address">
-                            <label for="note"></label>
-                            <textarea class="form-control" placeholder="Note" rows="3"></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-default" id="signupButton" >Join us</button>
-                        </form> -->
+                    <div class="col-lg-6 col-lg-offset-3">
                         <form action="index.html" method="post"> 
-                            <!-- <h1> Join Us. </h1>    -->
                             <h1 class="ctaHeader" style="white-space:pre"></h1>
-                           <fieldset>
-                            <input type="text" id="name" name="user_name" placeholder="Name">
-                            <input type="email" id="mail" name="user_email" placeholder="Email">
-                            <select id="job" name="user_job">
-                              <optgroup label="Web">
-                                <option value="frontend_developer">I want to help with...</option>
-                                <option value="php_developor">PHP Developer</option>
-                                <option value="python_developer">Python Developer</option>
-                                <option value="rails_developer"> Rails Developer</option>
-                                <option value="web_designer">Web Designer</option>
-                                <option value="WordPress_developer">WordPress Developer</option>
-                              </optgroup>
-                              <optgroup label="Mobile">
-                                <option value="Android_developer">Androild Developer</option>
-                                <option value="iOS_developer">iOS Developer</option>
-                                <option value="mobile_designer">Mobile Designer</option>
-                              </optgroup>
-                              <optgroup label="Business">
-                                <option value="business_owner">Business Owner</option>
-                                <option value="freelancer">Freelancer</option>
-                              </optgroup>
-                              <optgroup label="Other">
-                                <option value="secretary">Secretary</option>
-                                <option value="maintenance">Maintenance</option>
-                              </optgroup>
-                            </select>
-                            <button type="submit">Sign Up ✊</button>
-                           </fieldset>
-                          </form>
-
+                            <fieldset>
+                                <input type="text" id="name" name="user_name" placeholder="Name">
+                                <input type="email" id="mail" name="user_email" placeholder="Email">
+                                <select id="job" name="user_job">
+                                    <optgroup label="Web">
+                                        <option value="frontend_developer">I want to help with...</option>
+                                        <option value="php_developor">PHP Developer</option>
+                                        <option value="python_developer">Python Developer</option>
+                                        <option value="rails_developer"> Rails Developer</option>
+                                        <option value="web_designer">Web Designer</option>
+                                        <option value="WordPress_developer">WordPress Developer</option>
+                                    </optgroup>
+                                    <optgroup label="Mobile">
+                                        <option value="Android_developer">Androild Developer</option>
+                                        <option value="iOS_developer">iOS Developer</option>
+                                        <option value="mobile_designer">Mobile Designer</option>
+                                    </optgroup>
+                                    <optgroup label="Business">
+                                        <option value="business_owner">Business Owner</option>
+                                        <option value="freelancer">Freelancer</option>
+                                    </optgroup>
+                                    <optgroup label="Other">
+                                        <option value="secretary">Secretary</option>
+                                        <option value="maintenance">Maintenance</option>
+                                    </optgroup>
+                                </select>
+                                <button type="submit">Sign Up ✊</button>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-    <!-- Contact Section -->
-<!--     <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Us</h2>
-                <p>Feel free to email us to provide some feedback on our mission, give us suggestions for new approaches, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@fedup.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
- -->
-
-
-    <!-- Map Section -->
-<!--     <div id="map"></div> -->
 
     <!-- Footer -->
     <footer>
