@@ -10,7 +10,7 @@
  - Common properties for slide height - one for each size
  - Tailor each background image to given height
  - Background images should be fixed and shrinking window should merely crop
- 
+
  2. Device mockups
  - Pad each column
  - Look into carsl options (edyn as example)
@@ -50,13 +50,13 @@ h1 {
 h2 {
     font-family: source code pro;
     opacity: 0.87;
-    font-size: 24px; 
+    font-size: 24px;
 }
 
 h3 {
     font-family: source code pro;
     opacity: 0.87;
-    font-size: 36px; 
+    font-size: 36px;
 }
 
 p {
@@ -395,7 +395,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -412,7 +412,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -455,7 +455,7 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    
+
 
     .download-section {
         padding: 100px 0;
@@ -690,8 +690,8 @@ font-size: 14px;
     }
      .mobileImage {
         width: 50vw;
-        
-        
+
+
     }
      .emojiImage {
         width: 75vw;
@@ -750,11 +750,11 @@ font-size: 14px;
         margin-bottom: 80px;
     }
 
-      .emojiImage {
+      /*.emojiImage {
         width: 100vw;
         margin-top: 40px;
         margin-bottom: 80px;
-    }
+    }*/
 
     h1 {
 
@@ -769,7 +769,7 @@ font-size: 14px;
           transform: translate(-50%, -80%);
           }
 }
-    
+
 }
 
 
@@ -809,7 +809,7 @@ font-size: 14px;
 
 
 .mobileImage {
-    
+
 }
 
 
@@ -995,8 +995,8 @@ input {
      font-family: 'source code pro medium';
      src: url('../fonts/SourceCodePro-Medium.otf');
  }
- 
- 
+
+
 span.glyphicon.glyphicon-chevron-right{
 
     opacity: 0.3;
@@ -1033,7 +1033,7 @@ span.glyphicon.glyphicon-chevron-left:hover{
 }
 
 .typed-cursor {
-    font-size: 42px; 
+    font-size: 42px;
     font-family: source code pro;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
